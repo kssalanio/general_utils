@@ -106,3 +106,15 @@ defnonblock 5
 # screen -t mail 8 mutt
 # screen -t daemon 9 tail -f /var/log/daemon.log
 
+startup_message off
+shelltitle "> |csh"
+defscrollback 100000
+escape \034\034
+caption always
+hardstatus alwayslastline
+hardstatus string '%{= by}%-Lw%{= Yk}%50>%n%f* %t%{= by}%+Lw%< %{= kG}%-=%D %d %M %Y %C:%s %A%{-} %H '
+bind j focus down
+bind k focus up
+bind t focus top
+bind b focus bottom
+
