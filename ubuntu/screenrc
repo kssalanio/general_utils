@@ -106,6 +106,7 @@ defnonblock 5
 # screen -t mail 8 mutt
 # screen -t daemon 9 tail -f /var/log/daemon.log
 
+# Copied from ASTI seminar
 startup_message off
 shelltitle "> |csh"
 defscrollback 100000
